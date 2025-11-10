@@ -1,0 +1,453 @@
+<!-- Design a functional and creative web page using only HTML -->
+<!-- Personal Portfolio Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 83px;
+            background-color: #124170;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 15px;
+        
+        }
+        .left {
+            font-family: "Playwrite FR Trad";
+            color: #ffffff;
+        }
+
+        .firstsec {
+            display: flex;
+            background-image: linear-gradient( 181.2deg,  rgba(181,239,249,1) 10.5%, rgba(254,254,254,1) 86.8% );
+            justify-content: space-around;
+            align-items: center;
+            margin: ;
+
+        }
+
+        .leftsec {
+            font-size: 23px;
+            margin: 0px 65px;
+        }
+
+        .p1 {
+            font-size: 31px;
+            font-family: "Playwrite FR Trad";
+        }
+
+        .hr {
+            border: 0;
+            background: rgb(22, 16, 72);
+            height: 2.2px;
+            margin: 44px 80px;
+        }
+
+        .secondsec {
+            text-align: center;
+        
+            background-image: linear-gradient( 181.2deg,  rgba(181,239,249,1) 10.5%, rgba(254,254,254,1) 86.8% );
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px ;
+            height: 650px;
+        }
+
+        .secondsec h1 {
+            font-size: 2.1rem;
+            
+        }
+
+        .secondsec .box {
+            background: rgb(108, 42, 42);
+            width: 80vw;
+            height: 2px;
+            margin: 180px 0px;
+            display: flex;
+        }
+
+        .secondsec .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: black;
+            margin: 0px 100px;
+        }
+
+        .imagetop {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: -115px;
+            left: -43px;
+        }
+
+        .vertext {
+            position: relative;
+            left: -27px;
+        }
+
+        .image2 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: -115px;
+            left: -43px;
+        }
+
+        .vertext2 {
+            position: relative;
+            left: -27px;
+        }
+
+        .img3 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: -115px;
+            left: -43px;
+        }
+
+        .vertext3 {
+            position: relative;
+            left: -27px;
+        }
+
+        .img4 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: -115px;
+            left: -43px;
+        }
+
+        .vertext4 {
+            position: relative;
+            left: -27px;
+        }
+
+        .img5 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: -115px;
+            left: -43px;
+        }
+
+        .vertext5 {
+            position: relative;
+            left: -27px;
+        }
+
+        .Contactus {
+            
+            margin: 0px ;
+            height: 650px;
+        }
+
+        .phoimg {
+            height: 100px;
+            width: 100px;
+            margin: 30px 0px;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            border: 2px solid black;
+
+            position: relative;
+        }
+
+        footer {
+            text-align: center;
+            margin: 0px ;
+            height: 100px;
+            width: 100%;
+            background-color: #124170;
+        }
+
+        .btn {
+            height: 50px;
+            width: 135px;
+            border-radius: 4px;
+            font-size: 21px;
+            background-color: #16404D;
+        }
+
+        .a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .a:hover {
+            color: yellowgreen;
+        }
+
+        .imgg1 {
+            margin: 8px 8px;
+            height: 340px;
+            border: 2px solid rgb(110, 90, 90);
+            border-radius: 4px;
+        }
+
+        .Contactus {
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,249,255,1) 11.1%, rgba(255,241,255,1) 90% );
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .Contactleft {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .contLT h1 {
+            font-weight: 600;
+            color: #16404D;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .Contin {
+            background-color: #FBF5DD;
+            width: 400px;
+            height: 50px;
+            border: 2px solid #FBF5DD;
+            outline: none;
+            padding-right: 25px;
+            margin-top: 40px;
+            font-weight: 500;
+            border-radius: 80px;
+
+        }
+
+        .Contactleft textarea {
+            height: 140px;
+            padding-top: 15px;
+            border-radius: 20px;
+            background-color: #FBF5DD;
+        }
+
+        .Contin:focus {
+            border: 2px solid black;
+        }
+
+        .Contactleft::placeholder {
+            color: black;
+        }
+
+        .Contactleft button {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: aliceblue;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            background-color: #16404D;
+            cursor: pointer;
+        }
+
+        .Education {
+            background-image: linear-gradient( 181.2deg,  rgba(181,239,249,1) 10.5%, rgba(254,254,254,1) 86.8% );
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 70%;
+            height: 300px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        .hobbies {
+            background-image: linear-gradient( 90deg,  rgba(218,255,234,1) 5.3%, rgba(232,255,231,1) 11.6%, rgba(240,255,233,1) 17.4%, rgba(243,255,226,1) 22.9%, rgba(253,255,228,1) 28.5%, rgba(255,248,225,1) 33.9%, rgba(255,241,229,1) 39.4%, rgba(255,228,222,1) 44.8%, rgba(255,231,231,1) 50.3%, rgba(255,231,243,1) 56.9%, rgba(255,229,255,1) 63.2%, rgba(245,228,255,1) 69.1%, rgba(236,228,255,1) 74.7%, rgba(231,238,255,1) 80.4%, rgba(229,249,255,1) 85.8%, rgba(231,255,250,1) 90.6%, rgba(229,255,243,1) 94.4%, rgba(220,255,228,1) 98.3% );
+            text-align: center;
+        }
+        .secondsec .box{
+            align-items: center;
+        } 
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Anshika's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a class="a" href="#firstsecID">Introduction</a></li>
+                    <li><a class="a" href="#Education">Education</a></li>
+                    <li><a class="a" href="#secondsecID">Skills</a></li>
+                    <li><a class="a" href="#hobbies">Hobbies</a></li>
+                    <li><a class="a" href="#ContactusID">Contact Me</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsec" id="firstsecID">
+            <div class="leftsec">
+                <p class="p1">Hi Everyone I Am Anshika</p>
+                <p class="p2">I am Anshika Jaiswal.I am pusuing MCA from ABES. I am from Bareilly. I have completed my
+                    Bachelor's from Invertis University <br>I have knowledge of- HTML, CSS, Java Script and little more DSA with C++
+                </p>
+                <p class="p2"> I want to become a <b>Web Developer.</b></p>
+               
+            </div>
+            <div class="rightsec">
+                <img class="imgg1" src="mypicw.jpeg"></img>
+            </div>
+        </section>
+        <hr class="hr">
+        <section class="Education" id="Education">
+            <h1>MY EDUCATION</h1>
+            <table class="table" >
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Institution</th>
+                        <th>Marks</th>
+                        <th>Board</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>High School</td>
+                        <td>City Montessori School</td>
+                        <td>80%</td>
+                        <td>UP</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>City Montessori School</td>
+                        <td>83%</td>
+                        <td>UP</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Under Graduation</td>
+                        <td>Invertis University, Bareilly</td>
+                        <td>83%</td>
+                        <td>—</td>
+                        <td>2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr class="hr">
+        <section class="hobbies" id="hobbies" style="font-family: Arial, sans-serif; padding: 20px;">
+            <h1>My Hobbies</h1>
+            <p>I love exploring new ideas and acquiring
+                fresh skills that challenge me to grow both personally and professionally.</p>
+
+            <h3>Coding Enthusiast</h3>
+            <p>From building small websites to experimenting with programming languages, coding allows me to turn
+                imagination into reality. I enjoy solving problems, automating tasks, and continuously learning new
+                technologies to stay ahead in the digital world. Currently i am learning DSA with C++ and Solve
+                questions on LeetCode</p>
+
+            <h3>Passionate Cook</h3>
+            <p>Cooking is my creative outlet. Whether it's trying out traditional recipes or inventing my own fusion
+                dishes, I find joy in flavors, textures, and the art of presentation.</p>
+
+            <h3>Lifelong Learner</h3>
+            <p>I believe learning never stops. Whether it's reading, watching tutorials, or taking online courses, I’m
+                always eager to expand my horizons and dive into new subjects that spark my interest.</p>
+        </section>
+        <hr class="hr">
+        <section class="secondsec" id="secondsecID">
+            <span class="textgrey">I have good skills-</span>
+            <h1>
+                My Skills
+            </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="imagetop" src="HTMLogo.jpeg" alt="">
+                    <div class="vertext">HTML Skills(Hyper Text Transfer protocol)</div>
+                </div>
+                <div class="vertical">
+                    <img class="image2" src="CSSlogo.jpeg" alt="">
+                    <div class="vertext2">CSS Skills(Cascading style sheets)</div>
+                </div>
+                <div class="vertical">
+                    <img class="img5" src="js.jpeg" alt="">
+                    <div class="vertext5">JavaScript Skills(Front-end frameworks)</div>
+                </div>
+                <div class="vertical">
+                    <img class="img3" src="mongodb.webp" alt="">
+                    <div class="vertext3">"basic backend with Node.js,familiar with MongoDB,MongoDB Compass and know how
+                        to operate and manage databases in MongoDB"</div>
+                </div>
+                <div class="vertical">
+                    <img class="img4" src="C++.jpg" alt="">
+                    <div class="vertext">"These days, I'm learning C++ and also practicing LeetCode problems."
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="hr">
+        <section class="Contactus" id="ContactusID">
+            <form action="https://api.web3forms.com/submit" method="POST" class="Contactleft">
+                <div class="contLT">
+                    <h1>Get In Touch</h1>
+
+                </div>
+                <input type="hidden" name="access_key" value="5513b668-a0d3-492f-90d7-9695f28fe0ee">
+                <input type="text" id="name" placeholder="Your Name" class="Contin" required>
+                <input type="email" id="email" placeholder="Your Email" class="Contin" required>
+                <textarea name="message" id="message" placeholder="your mesaage" class="Contin" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr class="hr">
+    </main>
+    <footer>
+        <h1 class="a">&copy;By Anshika Jaiswal</h1>
+        <a class="a" 
+            href="https://www.linkedin.com/in/anshika-jaiswal-6a589724a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">My
+            LinkedIn Profile</a>
+    </footer>
+</body>
+
+</html>
